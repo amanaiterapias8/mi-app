@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: #0d0020;
+  font-family: 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar invisible */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Selección de texto */
+::selection {
+  background: rgba(155, 89, 182, 0.4);
+  color: #fff;
+}
+
+/* Botones accesibles */
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Input placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(200, 160, 240, 0.4);
+}
